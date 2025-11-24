@@ -1,0 +1,83 @@
+body {
+  background: #05010e;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 20px;
+  position: sticky;
+  top: 40px;
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  z-index: 10;
+  border-radius: 20px;
+}
+
+.judul {
+  font-size: 40px;
+  color: white;
+}
+
+.navLink {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(58, 58, 58);
+  transition: all 1s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: white;
+  transition: all 1s ease-in-out;
+}
+
+.boxAuth {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.boxAuth .login {
+  border: solid 2px white;
+  padding: 7px;
+  text-align: center;
+  width: 80px;
+  border-radius: 10px;
+}
+
+.boxAuth .login a {
+  font-size: 13px;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+}
+
+.boxAuth .register {
+  border: solid 2px white;
+  padding: 7px;
+  text-align: center;
+  width: 80px;
+  border-radius: 10px;
+}
+
+.boxAuth .register a {
+  font-size: 13px;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+}
