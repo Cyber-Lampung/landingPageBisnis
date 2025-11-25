@@ -1,5 +1,8 @@
 section {
-  margin: 140px 50px;
+  margin: 120px 50px;
+}
+
+.containerBox {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,4 +97,33 @@ section {
 .imageGif {
   width: 600px;
   border-radius: 30px;
+}
+
+.downArrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+.downArrow p {
+  color: white;
+}
+
+.downArrow img {
+  position: relative;
+  top: 10px;
+  width: 40px;
+  transform: rotate(135deg);
+  animation: downAnimation infinite 3s;
+}
+
+@keyframes downAnimation {
+  from {
+    top: 30px;
+  }
+  to {
+    top: 60px;
+  }
 }

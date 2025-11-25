@@ -1,5 +1,8 @@
 import NavbarLink from "./NavbarLink";
 import "../assets/css/navbar.css";
+import aos from "aos";
+
+// aos.init({ offset: 200, duration: 200, easing: "ease-in-sine", delay: 200 });
 
 const Navbar = () => {
   return (
