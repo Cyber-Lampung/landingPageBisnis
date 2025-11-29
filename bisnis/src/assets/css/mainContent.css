@@ -271,3 +271,22 @@ main p {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.boxFooter {
+  padding: 20px;
+}
+
+.garisHorizontal {
+  margin-top: 150px;
+  background: white;
+}
+
+.textFooterJudul {
+  font-size: 30px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.innerBoxFooter {
+  margin: 30px;
+}
