@@ -32,6 +32,42 @@ main p {
   border-radius: 20px;
 }
 
+.boxlangkahPembelian .imageRocket {
+  width: 20px;
+  position: relative;
+  top: 52px;
+  left: 40px;
+  transform: rotate(45deg);
+}
+
+.boxlangkahPembelian .person {
+  width: 20px;
+  position: relative;
+  top: 48px;
+  left: 40px;
+  font-size: 30px;
+}
+
+.boxlangkahPembelian .Cash {
+  width: 20px;
+  position: relative;
+  top: 48px;
+  left: 40px;
+  font-size: 30px;
+}
+
+.boxlangkahPembelian .Clock {
+  width: 20px;
+  position: relative;
+  top: 48px;
+  left: 40px;
+  font-size: 30px;
+}
+
+.boxlangkahPembelian .boxIcon {
+  position: absolute;
+}
+
 .boxlangkahPembelian p {
   color: white;
   text-align: start;
@@ -86,6 +122,18 @@ main p {
   z-index: 5;
   left: 30px;
   border-radius: 10px;
+}
+
+.boxlangkahPembelian .textRoadmapPembelian {
+  color: black;
+  position: relative;
+  top: 25px;
+  left: 30px;
+  font-size: 13px;
+}
+
+.boxlangkahPembelian .boxOutherLangkah {
+  display: flex;
 }
 
 .boxProdukKami {

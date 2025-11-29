@@ -1,9 +1,16 @@
 import "../assets/css/mainContent.css";
 import Input from "./Input";
+import { Cash, ClockFill, PersonFill } from "react-bootstrap-icons";
 
 const MainContent = () => {
   // ambil data dari localhost
   const localId = localStorage.getItem("userId");
+
+  const image = {
+    image: "/image/rocket.png",
+  };
+
+  document.title = "Home Landing Page";
 
   const produkList = [
     {
@@ -53,6 +60,16 @@ const MainContent = () => {
               <div className="DesainDown"></div>
 
               <p>1.</p>
+              <div className="boxOutherLangkah">
+                <div className="boxIcon">
+                  <img
+                    src={image.image}
+                    alt="imageRocket"
+                    className="imageRocket"
+                  />
+                </div>
+                <p className="textRoadmapPembelian">Pilih Paket Vps</p>
+              </div>
             </div>
             <div className="boxlangkahPembelian">
               <div className="stylingDesain">
@@ -67,6 +84,14 @@ const MainContent = () => {
               </div>
 
               <p>2.</p>
+              <div className="boxOutherLangkah">
+                <div className="boxIcon">
+                  <PersonFill className="person" />
+                </div>
+                <p className="textRoadmapPembelian">
+                  Memasukan Informasi Penguna
+                </p>
+              </div>
             </div>
             <div className="boxlangkahPembelian">
               <div className="stylingDesain">
@@ -81,6 +106,12 @@ const MainContent = () => {
               </div>
 
               <p>3.</p>
+              <div className="boxOutherLangkah">
+                <div className="boxIcon">
+                  <Cash className="Cash" />
+                </div>
+                <p className="textRoadmapPembelian">Melakukan Pembayaran</p>
+              </div>
             </div>
             <div className="boxlangkahPembelian">
               <div className="stylingDesain">
@@ -95,6 +126,12 @@ const MainContent = () => {
               </div>
 
               <p>4.</p>
+              <div className="boxOutherLangkah">
+                <div className="boxIcon">
+                  <ClockFill className="Clock" />
+                </div>
+                <p className="textRoadmapPembelian">Menunggu VPS anda siap.</p>
+              </div>
             </div>
 
             {/* styling rounded */}
