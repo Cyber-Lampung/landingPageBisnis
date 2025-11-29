@@ -12,8 +12,7 @@ const Navbar = () => {
           <h1 className="judul">CloudFriends</h1>
         </div>
         <div className="navLink">
-          <NavbarLink Navigation={"/"} Link={"Home"}></NavbarLink>
-          <NavbarLink Navigation={"/"} Link={"Tentang Kami"}></NavbarLink>
+          <NavbarLink Navigation={"/"} Link={"Roadmap Pembelian"}></NavbarLink>
           <NavbarLink Navigation={"/"} Link={"Produk Kami"}></NavbarLink>
           <NavbarLink Navigation={"/"} Link={"Kontak Kami"}></NavbarLink>
           <NavbarLink Navigation={"/"} Link={"Alamat Kami"}></NavbarLink>

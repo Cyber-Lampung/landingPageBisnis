@@ -19,7 +19,7 @@ main p {
 }
 
 .contentBox {
-  padding-top: 70px;
+  padding-top: 150px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -33,9 +33,11 @@ main p {
 }
 
 .boxlangkahPembelian p {
-  color: black;
+  color: white;
   text-align: start;
-  padding: 20px;
+  padding: 30px 0px 0px 50px;
+  position: relative;
+  z-index: 10;
 }
 
 .desainBox1 {
@@ -58,4 +60,166 @@ main p {
   height: 30px;
   position: relative;
   top: 50px;
+  border-top-right-radius: 10px;
+}
+
+.boxlangkahPembelian .DesainDown::before {
+  content: "";
+  width: 90px;
+  height: 40px;
+  background-color: #05010e;
+  float: left;
+  position: relative;
+  float: right;
+  top: 170px;
+  z-index: 5;
+}
+
+.boxlangkahPembelian .DesainDown::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  position: relative;
+  float: right;
+  top: 150px;
+  z-index: 5;
+  left: 30px;
+  border-radius: 10px;
+}
+
+.boxProdukKami {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  text-align: center;
+}
+
+.produkKami h1 {
+  color: white;
+}
+
+.outherBoxProduk {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.boxProduk {
+  width: 250px;
+  height: 300px;
+  background-color: rgba(11, 7, 119, 0.761);
+  border-radius: 30px;
+}
+
+.boxProduk .jenisVps {
+  color: black;
+}
+
+.textProduk {
+  color: black;
+}
+
+.boxProdukList {
+  display: flex;
+  gap: 40px;
+  margin-top: 100px;
+}
+
+.produkList {
+  display: flex;
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.boxProduk h2 {
+  padding-top: 30px;
+  color: white;
+}
+
+.boxProduk ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxProduk ul li {
+  list-style: none;
+  padding-top: 20px;
+  color: white;
+  text-align: left;
+  padding-left: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.btnBuy {
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 8px;
+  width: 140px;
+  color: white;
+  background: linear-gradient(to left, rgb(9, 9, 55), rgb(0, 0, 0));
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.containerBoxKontak {
+  margin-top: 200px;
+}
+
+.kontakBox {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background: linear-gradient(to left, rgb(2, 29, 63), rgb(18, 10, 35));
+  height: 400px;
+  box-shadow: 0px 0px 20px 0px white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.textKontak {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.inputEmail {
+  margin-top: 10px;
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.boxKontakInner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.boxButtonSendOuther {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.BtnPesan {
+  padding: 6px;
+  font-size: 10px;
+  width: 150px;
+  background: linear-gradient(to left, black, blue);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
