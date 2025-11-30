@@ -1,17 +1,17 @@
-import "./App.css";
-import Navbar from "./Component/Navbar";
-import HeroSection from "./Component/heroSection";
-import MainContent from "./Component/mainContent";
-import Footer from "./Component/Footer";
+import { BrowserRouter, Routes, Route } from "react-router";
+import Home from "./Component/pages/index/home";
+import Register from "./Component/pages/authentication/Register/Register.jsx";
+import Login from "./Component/pages/authentication/Login/Login.jsx";
 
 function App() {
   return (
-    <>
-      <Navbar></Navbar>
-      <HeroSection></HeroSection>
-      <MainContent></MainContent>
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/Login" element={<Login />}></Route>
+        <Route path="/Register" element={<Register />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
